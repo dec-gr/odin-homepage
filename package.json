@@ -1,7 +1,6 @@
 {
-  "name": "odin-template",
+  "name": "odin-homepage",
   "version": "1.0.0",
-  "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specific\" && exit 1",
@@ -25,5 +24,7 @@
   "dependencies": {
     "eslint": "^7.32.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "./src/index.js",
+  "description": ""
 }
