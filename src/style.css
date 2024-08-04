@@ -80,8 +80,21 @@ header::before {
   /* flex: 1; */
   box-shadow: 5px 5px 14px 0px #898989;
   border-radius: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
+.iconCont {
+  align-self: flex-end;
+}
+
+.linkedInBlack {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
 main {
   display: flex;
   justify-content: center;
