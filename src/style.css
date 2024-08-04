@@ -1,0 +1,20 @@
+:root {
+  --main-bg-color: rgb(244, 250, 255);
+  --secondary-bg-color: rgb(18, 178, 214);
+  --card-bg-color: rgb(255, 255, 255);
+  --primary-text-color: black;
+  --secondary-text-color: white;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.headerCard {
+  background-color: var(--card-bg-color);
+  border: solid black 1px;
+}
+
+footer {
+  background-color: var(--secondary-bg-color);
+}
