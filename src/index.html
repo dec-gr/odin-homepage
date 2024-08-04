@@ -4,27 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Declan Grant</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Declan Grant</h1>
-      <div class="headerCard">
-        <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </p>
+      <!-- <h1>Declan Grant</h1> -->
+      <div class="headerAlignCont">
+        <div class="headerCont">
+          <div class="headerImg">
+            <img src="<%=require('./battleship.png')%>" alt="" />
+          </div>
+          <div class="headerCard">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+
+            <i class="devicon-github-original colored"></i>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <h2>My work</h2>
-      <grid>
+      <grid class="projectGrid">
         <div class="projectCard">
           <img src="<%=require('./battleship.png')%>" alt="" />
+          <h3>Battle Ships</h3>
+          <p>An interactive game of Battle Ships</p>
+        </div>
+        <div class="projectCard">
+          <img src="<%=require('./battleship.png')%>" alt="" />
+          <h3>Battle Ships</h3>
+          <p>An interactive game of Battle Ships</p>
+        </div>
+        <div class="projectCard">
+          <img src="<%=require('./battleship.png')%>" alt="" />
+          <h3>Battle Ships</h3>
+          <p>An interactive game of Battle Ships</p>
+        </div>
+        <div class="projectCard">
+          <img src="<%=require('./battleship.png')%>" alt="" />
+          <h3>Battle Ships</h3>
+          <p>An interactive game of Battle Ships</p>
         </div>
       </grid>
     </main>
