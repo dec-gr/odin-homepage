@@ -11,6 +11,8 @@
 
 body {
   background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -57,7 +59,12 @@ header::before {
 h1 {
   text-align: center;
   color: var(--main-bg-color);
-  transform: rotate(-2deg);
+  rotate: -2deg;
+  transition: ease-in-out 400ms;
+}
+
+h1:hover {
+  transform: rotate(2deg);
 }
 
 .headerAlignCont {
@@ -145,6 +152,10 @@ header .iconCont {
   color: black;
 }
 
+.linkedInWhite {
+  color: white;
+}
+
 a {
   text-decoration: none;
 }
@@ -230,5 +241,47 @@ main {
 }
 
 footer {
-  background-color: var(--secondary-bg-color);
+  color: var(--main-bg-color);
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  margin-top: 8rem;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  padding: 2rem 0rem;
+  box-shadow: var(--card-box-shadow);
+
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px -18px 100px 0px; */
+  /* padding: 6rem 0rem; */
+}
+
+.contactMe {
+  padding: 0rem 2rem;
+}
+
+.linkedInContactDiv {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  align-items: baseline;
+}
+
+footer .iconCont:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out 400ms;
 }
