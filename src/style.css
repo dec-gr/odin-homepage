@@ -199,6 +199,7 @@ a {
   text-decoration: none;
 }
 main {
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,6 +211,7 @@ main {
 }
 
 .gridFlex {
+  margin-top: 2rem;
   display: flex;
   width: 80%;
 }
