@@ -13,21 +13,37 @@
   </head>
   <body>
     <header>
-      <!-- <h1>Declan Grant</h1> -->
+      <h1>Declan Grant</h1>
       <div class="headerAlignCont">
         <div class="headerCont">
           <div class="headerImg">
-            <img src="<%=require('./battleship.png')%>" alt="" />
+            <img src="<%=require('./images/headshot.png')%>" alt="" />
           </div>
           <div class="headerCard">
             <h2>About Me</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Hi, I'm Dec. This is a portfolio page created as part of
+              <strong>The Odin Project</strong> to practice responsive design.
+              This is very much a work in progress, I'll professionalise it once
+              I've finished the course and learnt how to build websites.
+            </p>
+            <p>
+              My background is in Data Science with a Masters in Engineering &
+              Entrepreneurship. Currently I work in the commercial team at a
+              tech startup.
+            </p>
+            <p>
+              I've never known how to build apps which has always felt like a
+              lacking skillset (especially in the startup industry) hence I'm
+              here now.
+            </p>
+            <p>
+              You can checkout my LinkedIn, Github or previous Odin projects
+              below.
+            </p>
+            <p>
+              <span class="warning">Fair warning</span> they're pretty rough and
+              tumble - I'm trying this stuff for the first time.
             </p>
             <div class="iconCont">
               <a href="https://github.com/dec-gr">
@@ -48,29 +64,119 @@
       </div>
     </header>
     <main>
-      <h2>My work</h2>
-      <grid class="projectGrid">
-        <div class="projectCard">
-          <img src="<%=require('./battleship.png')%>" alt="" />
-          <h3>Battle Ships</h3>
-          <p>An interactive game of Battle Ships</p>
-        </div>
-        <div class="projectCard">
-          <img src="<%=require('./battleship.png')%>" alt="" />
-          <h3>Battle Ships</h3>
-          <p>An interactive game of Battle Ships</p>
-        </div>
-        <div class="projectCard">
-          <img src="<%=require('./battleship.png')%>" alt="" />
-          <h3>Battle Ships</h3>
-          <p>An interactive game of Battle Ships</p>
-        </div>
-        <div class="projectCard">
-          <img src="<%=require('./battleship.png')%>" alt="" />
-          <h3>Battle Ships</h3>
-          <p>An interactive game of Battle Ships</p>
-        </div>
-      </grid>
+      <h2 class="workTitle underlined">
+        Previous Odin Projects<span class="warning">*</span>
+      </h2>
+      <p>
+        <span class="warning">*</span>these are the ones with nice UI's - the
+        rest are on GitHub
+      </p>
+      <div class="gridFlex">
+        <grid class="projectGrid">
+          <div class="projectCard">
+            <img src="<%=require('./battleship.png')%>" alt="" />
+            <div class="proCardHeader">
+              <h3>Battleships</h3>
+              <div class="iconCont">
+                <a href="https://github.com/dec-gr/battleship/tree/main">
+                  <i
+                    class="devicon-github-original colored"
+                    alt="GitHub icon"
+                  ></i>
+                </a>
+                <a href="https://dec-gr.github.io/battleship/">
+                  <img
+                    class="openNewImg"
+                    src="<%=require('./images/open-in-new.svg')%>"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>
+              An interactive Battleships game built with vanilla javascript,
+              html and css. Finally got my head around classes on this one.
+            </p>
+          </div>
+          <div class="projectCard">
+            <img src="<%=require('./images/weatherApp.png')%>" alt="" />
+            <div class="proCardHeader">
+              <h3>Droplet</h3>
+              <div class="iconCont">
+                <a href="https://github.com/dec-gr/weather-app/tree/main">
+                  <i
+                    class="devicon-github-original colored"
+                    alt="GitHub icon"
+                  ></i>
+                </a>
+                <a href="https://dec-gr.github.io/weather-app/">
+                  <img
+                    class="openNewImg"
+                    src="<%=require('./images/open-in-new.svg')%>"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>
+              This is a basic Weather App - It was the first introduction to
+              APIs.
+            </p>
+          </div>
+          <div class="projectCard">
+            <img src="<%=require('./images/toDoList.png')%>" alt="" />
+            <div class="proCardHeader">
+              <h3>Task Mastered</h3>
+              <div class="iconCont">
+                <a href="https://github.com/dec-gr/todo/tree/main">
+                  <i
+                    class="devicon-github-original colored"
+                    alt="GitHub icon"
+                  ></i>
+                </a>
+                <a href="https://dec-gr.github.io/todo/">
+                  <img
+                    class="openNewImg"
+                    src="<%=require('./images/open-in-new.svg')%>"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>
+              This one's a pretty simple Todo list web app. I based the layout
+              off trello (columns for each project). This one was to learn about
+              factory functions.
+            </p>
+          </div>
+          <div class="projectCard">
+            <img src="<%=require('./images/tictactoe.png')%>" alt="" />
+            <div class="proCardHeader">
+              <h3>Noughts and Crosses</h3>
+              <div class="iconCont">
+                <a href="https://github.com/dec-gr/tic-tac-toe">
+                  <i
+                    class="devicon-github-original colored"
+                    alt="GitHub icon"
+                  ></i>
+                </a>
+                <a href="https://dec-gr.github.io/tic-tac-toe/">
+                  <img
+                    class="openNewImg"
+                    src="<%=require('./images/open-in-new.svg')%>"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>This is noughts and crosses. Not much more to it than that.</p>
+          </div>
+        </grid>
+      </div>
     </main>
 
     <footer>
